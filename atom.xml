@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>博の客</title>
-  <subtitle>小乔流水乔</subtitle>
+  <subtitle>一个小小IT男的前端博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-23T15:57:37.000Z</updated>
+  <updated>2017-04-24T16:16:57.698Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,22 +16,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用css3动画制作一个旋转的立方体</title>
-    <link href="http://yoursite.com/2017/04/23/%E4%BD%BF%E7%94%A8css3%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E6%97%8B%E8%BD%AC%E7%9A%84%E7%AB%8B%E6%96%B9%E4%BD%93/"/>
-    <id>http://yoursite.com/2017/04/23/使用css3动画制作一个旋转的立方体/</id>
-    <published>2017-04-23T15:04:58.000Z</published>
-    <updated>2017-04-23T15:57:37.000Z</updated>
+    <title>随笔</title>
+    <link href="http://yoursite.com/2017/04/25/wu/"/>
+    <id>http://yoursite.com/2017/04/25/wu/</id>
+    <published>2017-04-24T16:15:42.000Z</published>
+    <updated>2017-04-24T16:16:57.698Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一名前端开发者的小小感悟"><a href="#一名前端开发者的小小感悟" class="headerlink" title="一名前端开发者的小小感悟"></a>一名前端开发者的小小感悟</h3><p>写代码写到现在，有点困了，就来这里写点东西，想想自己来公司也一年了，还记得去年的时候，公司还在用着angular框架，到今年已经是angualr、react、vue三驾马车齐奔腾了，让人有点应接不暇的赶脚。但当看到自己写出来的效果的时候，又觉得心里非常的开心。</p>
+<p>现在前端技术的正处在一个高速发展、百花齐放的时期。近两年 angular1 -&gt; angular4框架、 react(redux flux)框架 vue(vuex)框架 es6、webpack、Postcss后处理 flex布局等等。。。让人应接不暇，自己有时侯也感到疲倦烦躁。但是，每当看到它们带来的生产力的飞跃，让你一个人快速搞定前后端的全部开发时，就觉得这终究还是一条正确的道路。</p>
+<p>在这信息肆虐的时代，只有不停地向前，才能不被抛弃，才有能力竞争！</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h3 id=&quot;一名前端开发者的小小感悟&quot;&gt;&lt;a href=&quot;#一名前端开发者的小小感悟&quot; class=&quot;headerlink&quot; title=&quot;一名前端开发者的小小感悟&quot;&gt;&lt;/a&gt;一名前端开发者的小小感悟&lt;/h3&gt;&lt;p&gt;写代码写到现在，有点困了，就来这里写点东西，想想自己来公司也
     
     </summary>
     
       <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Testing" scheme="http://yoursite.com/tags/Testing/"/>
+      <category term="others" scheme="http://yoursite.com/tags/others/"/>
     
-      <category term="Another Tag" scheme="http://yoursite.com/tags/Another-Tag/"/>
+  </entry>
+  
+  <entry>
+    <title>随笔</title>
+    <link href="http://yoursite.com/2016/04/23/sui/"/>
+    <id>http://yoursite.com/2016/04/23/sui/</id>
+    <published>2016-04-23T15:04:58.000Z</published>
+    <updated>2017-04-24T16:17:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="为什么要搭建一个自己的博客"><a href="#为什么要搭建一个自己的博客" class="headerlink" title="为什么要搭建一个自己的博客"></a>为什么要搭建一个自己的博客</h3><p>借用Redux 的创造者 Dan Abramov的一句话：</p>
+<blockquote>
+<p><strong>“如果你不知道是否需要 Redux，那就是不需要它。”</strong></p>
+</blockquote>
+<p>是的，我开通个人博客的原因就像那句话一样，因为在自己不断地学习过程中，从其他技术大牛的博客网站学到了很多东西和技能，在这样一个信息爆炸的时代，学习和分享才是最正确的道路。虽然本人在技术方面还不能与大神媲美，但还是希望在从他人那里获取知识的同时，也能够把自己学习的一点心得与大家分享，并在这个平台多和大家交流沟通。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;为什么要搭建一个自己的博客&quot;&gt;&lt;a href=&quot;#为什么要搭建一个自己的博客&quot; class=&quot;headerlink&quot; title=&quot;为什么要搭建一个自己的博客&quot;&gt;&lt;/a&gt;为什么要搭建一个自己的博客&lt;/h3&gt;&lt;p&gt;借用Redux 的创造者 Dan Abramov的一
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="others" scheme="http://yoursite.com/tags/others/"/>
     
   </entry>
   

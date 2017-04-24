@@ -3,9 +3,16 @@
   
     
     <entry>
-      <title><![CDATA[随笔]]></title>
+      <title><![CDATA[一名前端开发者的小小感悟]]></title>
       <url>%2F2017%2F04%2F25%2Fwu%2F</url>
-      <content type="text"><![CDATA[一名前端开发者的小小感悟写代码写到现在，有点困了，就来这里写点东西，想想自己来公司也一年了，还记得去年的时候，公司还在用着angular框架，到今年已经是angualr、react、vue三驾马车齐奔腾了，让人有点应接不暇的赶脚。但当看到自己写出来的效果的时候，又觉得心里非常的开心。 现在前端技术的正处在一个高速发展、百花齐放的时期。近两年 angular1 -&gt; angular4框架、 react(redux flux)框架 vue(vuex)框架 es6、webpack、Postcss后处理 flex布局等等。。。让人应接不暇，自己有时侯也感到疲倦烦躁。但是，每当看到它们带来的生产力的飞跃，让你一个人快速搞定前后端的全部开发时，就觉得这终究还是一条正确的道路。 在这信息肆虐的时代，只有不停地向前，才能不被抛弃，才有能力竞争！]]></content>
+      <content type="text"><![CDATA[一名前端开发者的小小感悟写代码写到现在，有点困了，就来这里写点东西，想想自己来公司也一年了，还记得去年的时候，公司还在用着angular框架，到今年已经是angualr、react、vue三驾马车齐奔腾了，让人有点应接不暇的赶脚。但当看到自己写出来的效果的时候，又觉得心里非常的开心。 现在前端技术的正处在一个高速发展、百花齐放的时期。近两年 angular1 -&gt; angular4框架、 react(redux flux)框架 vue(vuex)框架 es6、webpack、Postcss后处理 flex布局等等。。。让人应接不暇，自己有时侯也感到疲倦烦躁。但是，每当看到它们带来的生产力的飞跃，让你一个人快速搞定前后端的全部开发时，就觉得这终究还是一条正确的道路。 在这信息肆虐的时代，只有不停地向前，才能不被抛弃，才有能力竞争！ fighting！！！]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[markdown语法的基本用法]]></title>
+      <url>%2F2016%2F07%2F25%2Fmarkdown%2F</url>
+      <content type="text"><![CDATA[记得刚用git代码管理工具那会，还不知道每个仓库里面的readme.md是怎么书写的。问了下度娘，才发现居然还有markdown这个语法，今天就来简单的说下，如何快速的使用它。 标题markdown段落 Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。 类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如： This is an H1============= This is an H2————- 类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如： # 这是 H1## 这是 H2###### 这是 H6 段落写一个段落的文本，要与文本的上下文都隔开至少一行。 这是一个段落 区块引用Markdown 标记区块引用是使用类似 email 中用 &gt; 的引用方式。在每行的最前面加上&gt;： &gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, 代码区段当要写一段代码的时候，也很简单，只要在你的代码前面使用制表符，例： hello world! 行内代码如果你只是想在文本中间插入一段代码的话，用反引号 ` 将你的代码括起来就行了，效果如下 : 这是一个我是句子里面的代码句子 无序列表你可以使用 * + - 这三种符号来表示你的无序列表 * Red* Green* Blue 有序列表有序列表则使用数字接着一个英文句点： 1. &nbsp; Bird2. &nbsp; McHale3.&nbsp; Parish 强调和斜体Markdown 使用星号（*）和底线（_）作为标记强调字词的符号，被 * 或_ 包围的字词会被转成用 &lt;em&gt; 标签包围，用两个 * 或 _ 包起来的话，则会被转成 &lt;strong&gt;，例如： *single asterisks*_single underscores_**double asterisks**__double underscores__ 链接与图片链接只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可 [链接名称](链接地址 “链接title”) 记住，链接一定要用双引号括起来，而且要与链接地址留一个空格，可以省略。 图片行内式的图片语法： ![图片替代文字](图片地址 “title”) 到这markdown的基本语法就讲完了，希望能对您有所帮助！]]></content>
     </entry>
 
     

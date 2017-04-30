@@ -309,6 +309,171 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/29/mock/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="博">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="博の客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/29/mock/" itemprop="url">
+                  前端mock数据（一）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-29T00:15:42+08:00">
+                2017-04-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/mock/" itemprop="url" rel="index">
+                    <span itemprop="name">mock</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="什么是mock数据"><a href="#什么是mock数据" class="headerlink" title="什么是mock数据"></a>什么是mock数据</h2><p>作为一名前端开发工程师，我们经常会遇到这样的问题，端已经页面写好了，后端的接口还不能给。有时为了让页面‘正常显示’，前端开发人员就会造一堆的静态假数据，等接口写好，再调接口，删静态数据。于是就想能不能自己模拟数据。简而言之，mock数据就是根据后端接口字段，生成前端需要的模拟数据以便前端独立开发。</p>
+<h2 id="Json-Server"><a href="#Json-Server" class="headerlink" title="Json Server"></a>Json Server</h2><p>不多说了，直接上硬菜。今天我想介绍的一款基于node服务器运行的一个plugins:<a href="https://github.com/typicode/json-server">JSON Server</a>,官网的介绍也很暴力：</p>
+<pre><code>Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+</code></pre><p>30s内零代码即可得到一个完整的模拟 REST API。是不是看到这个就心动了呢。接下里就让我们来看下怎么让这款插件运行起来。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在你的代码库里安装依赖<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install  json-server --save</div></pre></td></tr></table></figure></p>
+<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p>创建一个json文件。例如 mock.json<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"userinfo"</span>: [</div><div class="line">    &#123; <span class="string">"id"</span>: 1, <span class="string">"name"</span>: <span class="string">"张三"</span>, <span class="string">"age"</span>: <span class="string">"18"</span> &#125;,</div><div class="line">    &#123; <span class="string">"id"</span>: 2, <span class="string">"name"</span>: <span class="string">"李四"</span>, <span class="string">"age"</span>: <span class="string">"19"</span> &#125;,</div><div class="line">    &#123; <span class="string">"id"</span>: 3, <span class="string">"name"</span>: <span class="string">"王五"</span>, <span class="string">"age"</span>: <span class="string">"120"</span> &#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ json-server --watch mock.json</div></pre></td></tr></table></figure>
+<p>打开浏览器输入地址：<a href="http://localhost:3000/userinfo/1">http://localhost:3000/userinfo/1</a>,你可以看到如下数据：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123; <span class="string">"id"</span>: 1, <span class="string">"name"</span>: <span class="string">"张三"</span>, <span class="string">"age"</span>: <span class="string">"18"</span> &#125;</div></pre></td></tr></table></figure></p>
+<p><a href="http://localhost:3000/userinfo/1">http://localhost:3000/userinfo/1</a> 地址里面的userinfo很好理解，代表的就是json文件里面的userinfo键，1表示的是id为1的数据。<br>需要注意的是json-server里面的id是不可变的。用来标识每一条数据，这就好比该json文件时一个数据库，根属性名对应一张张的表，id是表里面的primary key。因此，如果如果你用put方法推入一条带有id的数据，是会被忽略的。<br>另外，需要注意的是，使用post和put方法，需要做一个特殊的处理，后面会讲到。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/29/mock/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/25/wu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -824,7 +989,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -835,7 +1000,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -846,7 +1011,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

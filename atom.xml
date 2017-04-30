@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-30T13:10:07.000Z</updated>
+  <updated>2017-04-30T13:11:59.113Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/29/mock/"/>
     <id>http://yoursite.com/2017/04/29/mock/</id>
     <published>2017-04-28T16:15:42.000Z</published>
-    <updated>2017-04-30T13:10:07.000Z</updated>
+    <updated>2017-04-30T13:11:59.113Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是mock数据"><a href="#什么是mock数据" class="headerlink" title="什么是mock数据"></a>什么是mock数据</h2><p>作为一名前端开发工程师，我们经常会遇到这样的问题，端已经页面写好了，后端的接口还不能给。有时为了让页面‘正常显示’，前端开发人员就会造一堆的静态假数据，等接口写好，再调接口，删静态数据。于是就想能不能自己模拟数据。简而言之，mock数据就是根据后端接口字段，生成前端需要的模拟数据以便前端独立开发。</p>
 <h2 id="Json-Server"><a href="#Json-Server" class="headerlink" title="Json Server"></a>Json Server</h2><p>不多说了，直接上硬菜。今天我想介绍的一款基于node服务器运行的一个plugins:<a href="https://github.com/typicode/json-server" target="_blank" rel="external">JSON Server</a>,官网的介绍也很暴力：</p>
@@ -107,9 +107,9 @@
     <link href="http://yoursite.com/2016/07/25/markdown/"/>
     <id>http://yoursite.com/2016/07/25/markdown/</id>
     <published>2016-07-24T16:22:08.000Z</published>
-    <updated>2017-04-24T17:13:52.097Z</updated>
+    <updated>2017-04-30T13:13:31.000Z</updated>
     
-    <content type="html"><![CDATA[<p>记得刚用git代码管理工具那会，还不知道每个仓库里面的readme.md是怎么书写的。问了下度娘，才发现居然还有markdown这个语法，今天就来简单的说下，如何快速的使用它。</p>
+    <content type="html"><![CDATA[<p>记得刚用git代码管理工具那会，还不知道每个仓库里面的readme.md是怎么书写的。问了下度娘，才发现居然还有markdown这个语法，今天就来简单的说下，如何快速的使用它。<br><a id="more"></a></p>
 <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>markdown段落 Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。</p>
 <p>类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如：</p>
 <blockquote>
@@ -160,8 +160,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;记得刚用git代码管理工具那会，还不知道每个仓库里面的readme.md是怎么书写的。问了下度娘，才发现居然还有markdown这个语法，今天就来简单的说下，如何快速的使用它。&lt;/p&gt;
-&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot;
+      &lt;p&gt;记得刚用git代码管理工具那会，还不知道每个仓库里面的readme.md是怎么书写的。问了下度娘，才发现居然还有markdown这个语法，今天就来简单的说下，如何快速的使用它。&lt;br&gt;
     
     </summary>
     
